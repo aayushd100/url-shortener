@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+<title>URL Shortener</title>        
+<link rel="stylesheet" href="app.css" type="text/css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" type="text/css" />
+<head>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+</head>
+    </head>
+    
+    <body>
+        <div class="container">
+ <form id="formInput" class="mx-auto my-3">
+  <div class="form-group">
+    <label for="givenName">Name:</label>
+    <input class="form-control" placeholder="Name" id="givenName" type="text" name="name"/>
+  </div>
+  <div class="form-group">
+    <label for="givenUrl">URL:</label>
+    <input class="form-control" placeholder="URL" id="givenUrl" type="text" name="url"/>
+  </div>
+  
+ <input id="submitButton" class="btn btn-primary" type="submit" value="Submit"/>
+</form>
+ 
+ 
+ 
+   
+
+<div id="info" class="alert alert-info fade in alert-dismissable show"  >
+    Use "https://node-aayushd100.c9users.io/(urlNameHere)" to access the URL
+</div>
+</div>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+        <script type="text/javascript" src="app.js"></script>
+    </body>
+</html>
