@@ -38,6 +38,10 @@ exports.getUrl = function(req, res) {
         })
 }
 
+exports.options = function(req, res){
+res.send({Access-Control-Allow-Origin: *})
+}
+
 
 /*exports.updateUrl = function(req, res) {
     db.Todo.findOneAndUpdate({ _id: req.params.todoId }, req.body, { new: true })
