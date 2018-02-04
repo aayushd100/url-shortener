@@ -38,9 +38,6 @@ exports.getUrl = function(req, res) {
         })
 }
 
-exports.options = function(req, res){
-res.send({Access-Control-Allow-Origin: *})
-}
 
 
 /*exports.updateUrl = function(req, res) {
