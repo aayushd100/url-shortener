@@ -2,7 +2,7 @@
 var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
-
+var cors = require('cors');
 
 
 app.use(bodyParser.json());
@@ -13,6 +13,8 @@ app.use(express.static(__dirname + '/views'));
 
 
 var urlRoutes = require('./routes/urls');
+app.use(cors());
+
 app.use('/', urlRoutes);
 
 /*
