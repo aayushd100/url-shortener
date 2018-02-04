@@ -11,18 +11,10 @@ app.use(express.static(__dirname + '/public'));
 app.use(express.static(__dirname + '/views'));
 
 
-
 var urlRoutes = require('./routes/urls');
 app.use(cors());
 
 app.use('/', urlRoutes);
-
-/*
-app.get('/', function(req,res){
-res.send("hey now brown cow!");    
-})*/
-
-
 
 
 

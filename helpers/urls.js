@@ -3,6 +3,9 @@ var db = require('../models')
 
 
 
+
+
+
 exports.getUrls = function(req, res) {
     db.Url.find()
         .then(function(urls) {
@@ -39,15 +42,6 @@ exports.getUrl = function(req, res) {
 }
 
 
-/*exports.updateUrl = function(req, res) {
-    db.Todo.findOneAndUpdate({ _id: req.params.todoId }, req.body, { new: true })
-        .then(function(todo) {
-            res.json(todo);
-        })
-        .catch(function(err) {
-            res.send(err);
-        })
-}*/
 
 exports.deleteUrl = function(req, res) {
     db.Url.remove({ _id: req.params.urlId })
