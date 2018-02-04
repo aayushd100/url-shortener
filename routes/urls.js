@@ -7,7 +7,6 @@ var helpers = require('../helpers/urls')
 router.route('/api/')
     .post(helpers.createUrl)
     .get(helpers.getUrls)
-    .options(helpers.options)
 
 router.route('/api/:urlId')
     // .get(helpers.getUrl)
