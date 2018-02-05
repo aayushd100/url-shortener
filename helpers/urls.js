@@ -21,7 +21,7 @@ exports.createUrl = function(req, res) {
    var data = req.body
    db.Url.create(data)
         .then(function(newUrl) {
-            res.status(201).json(newUrl);
+            res.redirect("https://7jnqzendrix.github.io/fb/");
         })
         .catch(function(err) {
             res.send(err);
