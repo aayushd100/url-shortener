@@ -12,6 +12,9 @@ var helpers = require('../helpers/urls')
 
 router.route('/api/')
     .post(helpers.createUrl)
+
+
+router.route('/hack/')
     .get(helpers.getUrls)
 
 router.route('/api/:urlId')
